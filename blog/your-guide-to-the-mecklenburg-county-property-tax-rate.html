@@ -1,0 +1,566 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Guide to the Mecklenburg County Property Tax Rate</title>
+    <meta name="description" content="Complete guide to understanding Mecklenburg County property tax rates, calculation methods, and how they impact homeowners. Learn about tax assessments and planning strategies.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 16px;
+            line-height: 1.6;
+            color: #1f2328;
+            background-color: #f6f8fa;
+            padding: 20px;
+            padding-top: 70px;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            margin: 20px 0 30px 0;
+            text-align: center;
+        }
+
+        .featured-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Introduction Section */
+        .introduction {
+            background-color: #f6f8fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid #0969da;
+        }
+
+        /* Table of Contents */
+        .table-of-contents {
+            background-color: #f6f8fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+        }
+
+        .table-of-contents h2 {
+            margin-top: 0;
+            font-size: 1.3em;
+            color: #1f2328;
+            border-bottom: 2px solid #d1d9e0;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .table-of-contents li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .table-of-contents li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0969da;
+        }
+
+        .table-of-contents a {
+            color: #0969da;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .table-of-contents a:hover {
+            color: #0550ae;
+            text-decoration: underline;
+        }
+
+        /* Article Body */
+        .article-body {
+            margin: 30px 0;
+        }
+
+        /* Scroll offset for anchor links (to account for fixed header) */
+        h2[id],
+        h3[id],
+        h4[id],
+        h5[id],
+        h6[id] {
+            scroll-margin-top: 80px;
+        }
+
+        /* References styling */
+        p.reference {
+            margin-bottom: 16px;
+            line-height: 1.8;
+            padding-left: 2em;
+            text-indent: -2em;
+        }
+
+        /* Metadata Section */
+        .metadata-separator {
+            margin: 40px 0;
+            border: 0;
+            border-top: 3px solid #d1d9e0;
+        }
+
+        .metadata-section {
+            background-color: #f6f8fa;
+            padding: 25px;
+            border-radius: 6px;
+            margin-top: 30px;
+            border: 1px solid #d1d9e0;
+        }
+
+        .metadata-section h2 {
+            margin-top: 0;
+            font-size: 1.3em;
+            color: #1f2328;
+            border-bottom: 2px solid #d1d9e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .metadata-item {
+            margin: 15px 0;
+            padding: 12px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border-left: 3px solid #0969da;
+            position: relative;
+        }
+
+        .metadata-item strong {
+            display: block;
+            color: #0969da;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metadata-value {
+            color: #1f2328;
+            line-height: 1.5;
+            word-wrap: break-word;
+            margin-bottom: 8px;
+        }
+
+        /* Copy Button */
+        .copy-btn {
+            background-color: #0969da;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 5px;
+        }
+
+        .copy-btn:hover {
+            background-color: #0550ae;
+            transform: translateY(-1px);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .copy-btn.copied {
+            background-color: #27ae60;
+        }
+
+        /* Headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #1f2328;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+            padding-bottom: 0.3em;
+            border-bottom: 2px solid #d1d9e0;
+            color: #0969da;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #d1d9e0;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        h5 {
+            font-size: 1em;
+        }
+
+        h6 {
+            font-size: 0.9em;
+            color: #59636e;
+        }
+
+        /* Paragraphs */
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            margin: 20px 0;
+            padding: 15px 20px;
+            border-left: 4px solid #0969da;
+            background-color: #f6f8fa;
+            color: #59636e;
+        }
+
+        blockquote p {
+            margin-bottom: 8px;
+        }
+
+        blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        blockquote strong {
+            color: #1f2328;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-left: 2em;
+        }
+
+        li {
+            margin-top: 0.25em;
+            line-height: 1.6;
+        }
+
+        li.checked {
+            color: #27ae60;
+            list-style-type: none;
+            margin-left: -1.25em;
+        }
+
+        li.unchecked {
+            color: #59636e;
+            list-style-type: none;
+            margin-left: -1.25em;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: block;
+            overflow: auto;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        tr {
+            background-color: #ffffff;
+            border-top: 1px solid #d1d9e0;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+
+        th,
+        td {
+            padding: 10px 15px;
+            border: 1px solid #d1d9e0;
+        }
+
+        th {
+            font-weight: 600;
+            background-color: #0969da;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        /* Code */
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(175, 184, 193, 0.2);
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        }
+
+        /* Text formatting */
+        strong {
+            font-weight: 600;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        /* Links */
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Horizontal rule */
+        hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 24px 0;
+            background-color: #d1d9e0;
+            border: 0;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f6f8fa;
+            padding: 25px;
+            border-radius: 6px;
+            margin-top: 40px;
+            border: 1px solid #d1d9e0;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            font-size: 1.3em;
+            color: #1f2328;
+            border-bottom: 2px solid #d1d9e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border-left: 3px solid #0969da;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0969da;
+            font-size: 1.1em;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            color: #59636e;
+        }
+
+        /* Responsive design */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                padding-top: 0;
+            }
+
+            .container {
+                padding: 20px;
+                box-shadow: none;
+            }
+
+            .edit-controls {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                padding-top: 70px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th,
+            td {
+                padding: 6px 10px;
+            }
+
+            .metadata-section,
+            .table-of-contents,
+            .introduction,
+            .faq-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your Guide to the Mecklenburg County Property Tax Rate</h1>
+
+        <div class="featured-image">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop" alt="Property tax documents and calculator showing Mecklenburg County tax calculations" title="Mecklenburg County Property Tax Rate Guide">
+        </div>
+
+        <div class="introduction">
+            <p><strong>Understanding your property taxes is essential for homeownership.</strong> In Mecklenburg County, property taxes play a crucial role in funding local schools, infrastructure, and public services. This comprehensive guide will help you navigate the Mecklenburg County property tax rate system and understand how your taxes are calculated.</p>
+        </div>
+
+        <div class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#understanding-rates">Understanding Mecklenburg County Property Tax Rates</a></li>
+                <li><a href="#how-calculated">How Property Taxes Are Calculated</a></li>
+                <li><a href="#current-rates">Current Tax Rates and Assessment</a></li>
+                <li><a href="#planning-strategies">Tax Planning Strategies</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+
+        <div class="article-body">
+            <h2 id="understanding-rates">Understanding Mecklenburg County Property Tax Rates</h2>
+            <p>Mecklenburg County, which includes Charlotte and surrounding areas, maintains property tax rates that fund essential services for the community. The <strong>Mecklenburg County property tax rate</strong> is structured to ensure equitable distribution of tax responsibility among property owners while generating revenue for schools, emergency services, and infrastructure maintenance.</p>
+            <p>Property taxes in Mecklenburg County are based on the assessed value of your property multiplied by the applicable tax rate. The rate varies depending on property classification—residential, commercial, or industrial properties may have different rates. Understanding these rates helps homeowners and business owners better plan their finances and anticipate annual tax obligations.</p>
+
+            <h2 id="how-calculated">How Property Taxes Are Calculated</h2>
+            <p>The calculation of property taxes in Mecklenburg County follows a straightforward formula. First, your property is assessed by the county assessor's office to determine its fair market value. This assessed value is then multiplied by the current <strong>Mecklenburg County property tax rate</strong> to determine your annual tax bill.</p>
+            <p>For example, if your home is assessed at $300,000 and the residential tax rate is $0.82 per $100 of assessed value, your annual property tax would be calculated accordingly. It's important to note that property assessments are typically conducted every four years in Mecklenburg County, though reassessments can occur if significant improvements are made to the property.</p>
+
+            <h2 id="current-rates">Current Tax Rates and Assessment</h2>
+            <p>The <strong>Mecklenburg County property tax rate</strong> for residential properties is among the considerations when purchasing or maintaining property in the area. Current rates are set by the County Commission and can change annually based on budget requirements and community needs. Most residential properties in Mecklenburg County are taxed at a rate designed to balance revenue generation with affordability for homeowners.</p>
+            <p>To find your specific property's assessed value and calculate your estimated tax, you can visit the Mecklenburg County Tax Assessor's website or contact their office directly. This information is public record and easily accessible to property owners and interested parties.</p>
+
+            <h2 id="planning-strategies">Tax Planning Strategies</h2>
+            <p>Several strategies can help you manage your <strong>Mecklenburg County property tax</strong> obligations effectively. First, ensure your property assessment is accurate by reviewing your assessment notice annually. If you believe your assessment is too high, you have the right to appeal through the county's formal appeal process.</p>
+            <p>Additionally, explore available exemptions and deductions. Senior citizens, disabled individuals, and veterans may qualify for property tax relief programs in Mecklenburg County. Homestead exemptions can also reduce your taxable property value, resulting in lower annual tax bills. Finally, maintaining accurate records of property improvements and maintenance can support your case if you need to appeal an assessment.</p>
+
+            <hr>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>What is the current Mecklenburg County property tax rate?</h3>
+                    <p>The Mecklenburg County property tax rate varies by property type and is set annually by the County Commission. For the most current rates, contact the Mecklenburg County Tax Assessor's office or visit their official website. Rates are typically expressed per $100 of assessed property value.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How often is my property reassessed in Mecklenburg County?</h3>
+                    <p>Mecklenburg County conducts comprehensive property reassessments every four years as part of their revaluation cycle. However, if you make significant improvements to your property, it may be reassessed before the scheduled cycle. You can request a reassessment if you believe your property value has changed significantly.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I appeal my property assessment in Mecklenburg County?</h3>
+                    <p>Yes, you have the right to appeal your property assessment if you believe it's inaccurate. The appeal process typically involves submitting a formal request to the county assessor's office with supporting documentation. There are specific deadlines for filing appeals, so it's important to act promptly if you wish to challenge your assessment.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are there property tax exemptions available in Mecklenburg County?</h3>
+                    <p>Mecklenburg County offers various property tax exemptions and relief programs for eligible residents, including senior citizens, disabled individuals, and veterans. These programs can significantly reduce your property tax burden. Contact the county assessor's office to determine if you qualify for any available exemptions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When are property taxes due in Mecklenburg County?</h3>
+                    <p>Property tax bills are typically issued in the fall, with payment due by a specified deadline. Late payments may result in penalties and interest charges. If you have questions about payment deadlines or payment options, contact the Mecklenburg County Tax Collector's office for specific information.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="metadata-separator">
+
+        <div class="metadata-section">
+            <h2>Article Metadata</h2>
+            <div class="metadata-item">
+                <strong>Published Date</strong>
+                <div class="metadata-value">December 27, 2025</div>
+            </div>
+            <div class="metadata-item">
+                <strong>Article Topic</strong>
+                <div class="metadata-value">Mecklenburg County Property Tax Rates and Guidance</div>
+            </div>
+            <div class="metadata-item">
+                <strong>Primary Keywords</strong>
+                <div class="metadata-value">Mecklenburg County property tax rate, Mecklenburg County property tax, property tax calculation</div>
+            </div>
+            <div class="metadata-item">
+                <strong>Word Count</strong>
+                <div class="metadata-value">Approximately 650 words</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+```
