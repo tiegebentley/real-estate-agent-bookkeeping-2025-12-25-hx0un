@@ -65,6 +65,33 @@
         .mobile-menu {
             transition: all 0.3s ease-out;
         }
+
+        .blog-post {
+            display: none;
+        }
+
+        .blog-post.active {
+            display: flex;
+        }
+
+        .pagination-btn {
+            transition: all 0.3s ease-out;
+        }
+
+        .pagination-btn.active {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            color: white;
+        }
+
+        .pagination-btn:not(.active) {
+            background: white;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+        }
+
+        .pagination-btn:not(.active):hover {
+            background: #f3f4f6;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -181,9 +208,9 @@
                 <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-8">
                     All Articles
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogPostsContainer">
                     <!-- Blog Post 1 -->
-                    <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
+                    <div class="blog-post active card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
                         <div class="bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] h-40 flex items-center justify-center">
                             <div class="text-6xl text-white">
                                 <i class="fas fa-file-invoice-dollar"></i>
@@ -206,7 +233,7 @@
                     </div>
 
                     <!-- Blog Post 2 -->
-                    <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
+                    <div class="blog-post active card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
                         <div class="bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] h-40 flex items-center justify-center">
                             <div class="text-6xl text-white">
                                 <i class="fas fa-lightbulb"></i>
@@ -228,27 +255,56 @@
                         </div>
                     </div>
 
-                <!-- New Blog Post Example -->
-                <div class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
-                    <div class="bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] h-40 flex items-center justify-center">
-                        <div class="text-6xl text-white">
-                            <i class="fas fa-chart-line"></i>
+                    <!-- Blog Post 3 -->
+                    <div class="blog-post active card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
+                        <div class="bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] h-40 flex items-center justify-center">
+                            <div class="text-6xl text-white">
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Your Guide to the Mecklenburg County Property Tax Rate</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center gap-2">
+                                <i class="fas fa-calendar-alt text-[#5B4BFF]"></i>
+                                December 28, 2025
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                                Understanding property tax rates is crucial for real estate professionals in Mecklenburg County. This comprehensive guide explores how property taxes work, the current tax rates, assessment procedures, and strategies to help your clients.
+                            </p>
+                            <a href="https://tiegebentley.github.io/real-estate-agent-bookkeeping-2025-12-25-hx0un/blog/your-guide-to-the-mecklenburg-county-property-tax-rate.html" class="text-[#5B4BFF] hover:text-[#00E5A8] font-semibold flex items-center gap-2 transition-colors duration-300">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Your New Blog Title</h3>
-                        <p class="text-gray-600 text-sm mb-4 flex items-center gap-2">
-                            <i class="fas fa-calendar-alt text-[#5B4BFF]"></i>
-                            December 25, 2025
-                        </p>
-                        <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
-                            Your blog post description here.
-                        </p>
-                        <a href="#" class="text-[#5B4BFF] hover:text-[#00E5A8] font-semibold flex items-center gap-2">
-                            <span>Read More</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+
+                    <!-- Blog Post 4 -->
+                    <div class="blog-post card-hover bg-white rounded-2xl overflow-hidden border border-gray-200 soft-shadow flex flex-col h-full">
+                        <div class="bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] h-40 flex items-center justify-center">
+                            <div class="text-6xl text-white">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Your New Blog Title</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center gap-2">
+                                <i class="fas fa-calendar-alt text-[#5B4BFF]"></i>
+                                December 25, 2025
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                                Your blog post description here.
+                            </p>
+                            <a href="#" class="text-[#5B4BFF] hover:text-[#00E5A8] font-semibold flex items-center gap-2">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center items-center gap-4 mt-12" id="paginationContainer">
+                    <button class="pagination-btn active px-4 py-2 rounded-lg font-semibold transition-all duration-300" data-page="1">1</button>
                 </div>
             </div>
         </div>
@@ -367,6 +423,56 @@
                     }
                 });
             });
+
+            // Pagination Logic
+            const postsPerPage = 3;
+            const blogPosts = document.querySelectorAll('.blog-post');
+            const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+            const paginationContainer = document.getElementById('paginationContainer');
+
+            // Generate pagination buttons
+            if (totalPages > 1) {
+                paginationContainer.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.className = 'pagination-btn px-4 py-2 rounded-lg font-semibold transition-all duration-300';
+                    button.textContent = i;
+                    button.dataset.page = i;
+                    if (i === 1) button.classList.add('active');
+                    
+                    button.addEventListener('click', function() {
+                        showPage(i);
+                    });
+                    
+                    paginationContainer.appendChild(button);
+                }
+            }
+
+            function showPage(pageNumber) {
+                // Hide all posts
+                blogPosts.forEach(post => {
+                    post.classList.remove('active');
+                });
+
+                // Show posts for current page
+                const startIndex = (pageNumber - 1) * postsPerPage;
+                const endIndex = startIndex + postsPerPage;
+                
+                for (let i = startIndex; i < endIndex && i < blogPosts.length; i++) {
+                    blogPosts[i].classList.add('active');
+                }
+
+                // Update pagination buttons
+                document.querySelectorAll('.pagination-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (parseInt(btn.dataset.page) === pageNumber) {
+                        btn.classList.add('active');
+                    }
+                });
+
+                // Scroll to blog section
+                document.getElementById('blogPostsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     </script>
 </body>
