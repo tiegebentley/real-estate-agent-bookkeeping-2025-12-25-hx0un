@@ -22,6 +22,70 @@
             padding-top: 70px;
         }
 
+        /* Edit Mode Button */
+        .edit-controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #0969da;
+            padding: 15px 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .edit-toggle-btn {
+            background-color: #ffffff;
+            color: #0969da;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .edit-toggle-btn:hover {
+            background-color: #f6f8fa;
+            transform: translateY(-1px);
+        }
+
+        .edit-toggle-btn.active {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .edit-status {
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+
+        /* Editable mode styles */
+        [contenteditable="true"] {
+            outline: 2px dashed #0969da;
+            outline-offset: 4px;
+            transition: outline 0.2s;
+        }
+
+        [contenteditable="true"]:focus {
+            outline: 2px solid #0969da;
+            background-color: #f6f8fa;
+        }
+
         /* Featured Image */
         .featured-image {
             margin: 20px 0 30px 0;
@@ -426,7 +490,13 @@
 </head>
 
 <body>
-       <div class="container">
+    <!-- Edit Mode Controls -->
+    <div class="edit-controls">
+        <button class="edit-toggle-btn" onclick="toggleEditMode()">Enable Edit Mode</button>
+        <span class="edit-status">Click to edit content directly in the browser</span>
+    </div>
+
+    <div class="container">
         <h1>Contractor Lead Costs in Charlotte: 2025 Price Analysis</h1>
 
         <div class="featured-image">
